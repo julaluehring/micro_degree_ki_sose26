@@ -249,10 +249,10 @@ Hier könnte das so aussehen:
 
 
 * **Klassifikation**: Ausgabe ist eine Klasse (z.B. Spam / kein Spam)
-  - Naive Bayes, decision tree, random forest, logistic regresion, usw. 
+  - Naive Bayes, decision tree, random forest, logistic regression, usw. 
 
 * **Regression**: Ausgabe ist ein kontinuierlicher Wert (z.B. Preis)
-  - Decision tree, random forest, linear regresion, usw. 
+  - Decision tree, random forest, linear regression, usw. 
 
 > Entscheidend: die Qualität und Balance der Labels!
 
@@ -267,7 +267,7 @@ Hier könnte das so aussehen:
 
 <br>
 
-* **Faustregel**: mit simplen Modellen starten, Komplexität bei Bedarf erhöhen.
+* **Faustregel**: mit simplen Modellen und Hyperparametern starten, Komplexität bei Bedarf erhöhen und Ergebnisse systematisch evaluieren!
 
 :::
 
@@ -347,7 +347,13 @@ Hier könnte das so aussehen:
 
 $\rightarrow$ *Die Wahl der Metrik hängt von den Erwartungen ab, s. Vorlesung zur Performance*^[[janalasser.at/lectures/MC_KI/VO2_2_performance]( https://janalasser.at/lectures/MC_KI/VO2_2_performance/#/2/2/1)]
 
+## Area under the curve
 
+Vergleich von kontinuierlicher Vorhersage gegen Klassen
+
+![Luehring et al., [2025](https://doi.org/10.31234/osf.io/cemw7_v1)](images/roc_curve.png){width="500"}
+
+$\rightarrow$ In so einer Grafik kann man auch die Performanz von verschiedenen *Modellen* oder *Hyperparametern* vergleichen
 
 ## Modellfehler
 
@@ -376,6 +382,16 @@ $\rightarrow$ *Die Wahl der Metrik hängt von den Erwartungen ab, s. Vorlesung z
 :::
 
 :::
+
+## Data & code sharing: best practices
+
+**Daten**: Ggf. anonymisieren und auf europäischen Servern bereitstellen (z.B. OSF)
+
+> Zook et al. ([2017](https://doi.org/10.1371/journal.pcbi.1005399)): Ten rules for responsible big data research 
+
+**Code**: GitHub oder GitLab für version control, Google Colab zum direkten Kollaborieren an Skripten oder auch ein OSF-repository mit Daten und Code
+
+> GitHub Education (mit Copilot) oder Claude Code (in der Konsole)
 
 # Offene Fragen?
 Dann auf zu Moodle!
