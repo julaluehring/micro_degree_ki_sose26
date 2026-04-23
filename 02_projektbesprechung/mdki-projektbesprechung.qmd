@@ -285,10 +285,19 @@ Hier könnte das so aussehen:
 :::
 
 
+## Übliche Mischformen
 
+* **semi-supervised learning**: wenige Labels, daher lernt das Modell von beidem 
 
+* **self-supervised**: das Modell erstellt eigene Label und lernt dann davon
 
+* **transfer learning**: man nimmt ein vortrainiertes Modell, z.B. ein passendes BERT-Modell von huggingface.com
 
+## Deep Learning und LLMs
+
+* **Deep learning**: unstrukturierte Daten, gut für Bilder und Audio; braucht aber viele Daten, daher oft transfer learning
+
+* **LLMs**: zero- oder few-shot learning (lokal z.B. mit Ollama)
 
 
 ## Wie viele Daten? 
@@ -392,6 +401,14 @@ $\rightarrow$ In so einer Grafik kann man auch die Performanz von verschiedenen 
 **Code**: GitHub oder GitLab für version control, Google Colab zum direkten Kollaborieren an Skripten oder auch ein OSF-repository mit Daten und Code
 
 > GitHub Education (mit Copilot) oder Claude Code (in der Konsole)
+
+## Klassische Pipeline
+
+1. Haben wir gelabelte Daten, wie viele und wie gut ist die Qualität?
+
+2. Testen verschiedener Ansätze und Hyperparameter
+
+3. Auswertung dessen, was am besten klappt -- mit Diskussion der Implikationen und Fehler
 
 # Offene Fragen?
 Dann auf zu Moodle!
